@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		617390B62B8F499C0035BA33 /* FruitRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617390B52B8F499C0035BA33 /* FruitRowView.swift */; };
 		61BA80C02B8DBA60006C2A7B /* Fructus1AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BA80BF2B8DBA60006C2A7B /* Fructus1AppApp.swift */; };
 		61BA80C22B8DBA60006C2A7B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BA80C12B8DBA60006C2A7B /* ContentView.swift */; };
 		61BA80C42B8DBA61006C2A7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61BA80C32B8DBA61006C2A7B /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		617390B52B8F499C0035BA33 /* FruitRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitRowView.swift; sourceTree = "<group>"; };
 		61BA80BC2B8DBA60006C2A7B /* Fructus1App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fructus1App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61BA80BF2B8DBA60006C2A7B /* Fructus1AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fructus1AppApp.swift; sourceTree = "<group>"; };
 		61BA80C12B8DBA60006C2A7B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				61BA80D02B8DC19C006C2A7B /* FruitCardView.swift */,
 				61BA80D22B8DC9A3006C2A7B /* StartButtonView.swift */,
+				617390B52B8F499C0035BA33 /* FruitRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			files = (
 				61E0B6382B8DDA1000DAC3DC /* FruitData.swift in Sources */,
 				61BA80D12B8DC19C006C2A7B /* FruitCardView.swift in Sources */,
+				617390B62B8F499C0035BA33 /* FruitRowView.swift in Sources */,
 				61BA80D32B8DC9A3006C2A7B /* StartButtonView.swift in Sources */,
 				61E0B6352B8DD81400DAC3DC /* FruitsModel.swift in Sources */,
 				61BA80C22B8DBA60006C2A7B /* ContentView.swift in Sources */,
