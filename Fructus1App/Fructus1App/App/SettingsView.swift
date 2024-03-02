@@ -10,6 +10,7 @@ import SwiftUI
 struct SettingsView: View {
     //MAR: - PROP
     @Environment(\.presentationMode) var presentationMode
+    @AppStorage("isOnboarding") var isOnboarding: Bool = false
     //MARK: - BODYY
 
     var body: some View {
@@ -37,7 +38,44 @@ struct SettingsView: View {
                         }
                     }
                     
-                    //MARK: - SECT2
+                    //MARK: - SEC2
+                    
+                    GroupBox(
+                        label: SettingLabelView(labelText: "Customization", labelImage: "paintbrush")
+                    ){
+                        Divider().padding(.vertical,4)
+                            Text("If you wish you can restart on the application by toggle the switch in this box. That way it starts the onboarding process and you will se the welcome screen again")
+                            .padding(.vertical, 8)
+                            .frame(minHeight: 60)
+                            .layoutPriority(1)
+                            .font(.footnote)
+                            .multilineTextAlignment(.leading)
+                     
+                        Toggle(isOn: $isOnboarding) {
+                            if isOnboarding {
+                                Text("Restarted".uppercased())
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color.green)
+                            } else {
+                                Text("Restart".uppercased())
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color.secondary)
+                            }
+                            
+                        }
+                        .padding()
+                        .background(
+                            Color(UIColor.tertiarySystemBackground)
+                                .clipShape(RoundedRectangle(cornerRadius: 9, style: .continuous))
+                        )
+                    }
+                    
+                    
+                    
+                    
+                    
+                 
+                    
                     //MARK: SEC3
                     
                     GroupBox(
